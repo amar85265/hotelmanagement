@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/users")
 @RequiredArgsConstructor
-public class UserController {
+public class UserControllr{
 
     private final UserService userService;
 
@@ -38,7 +38,7 @@ public class UserController {
 
     @DeleteMapping("/{id}")
     public String deleteUser(@PathVariable Integer id) {
-        userService.deleteUser(id);
+        userService.deleteUser(id)frktrkr
         return "User deleted successfully";
     }
 }
