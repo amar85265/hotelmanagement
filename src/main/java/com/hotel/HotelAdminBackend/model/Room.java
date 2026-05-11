@@ -21,7 +21,7 @@ public class Room{
     @Column(unique = true, nullable = false)
     private String roomNumber;
 
-    private Integer roomTypeId
+    private Integer roomTypeId;
 
     private BigDecimal price;
 
@@ -39,5 +39,5 @@ public class Room{
 
     private String modifiedBy;
 
-    private LocalDateTime modifiedDate;
+    private LocalDateTime modifiedDate
 }
